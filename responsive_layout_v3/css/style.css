@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+    font-family: 'Cormorant Infant', serif;
+}
+.container{
+    width: 60%;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+h1{
+    color: darkblue;
+    margin: 0;
+    font-size: 1.5em;
+    font-family: 'Permanent Marker', cursive;
+}
+h2{
+    font-family: 'Titan One', cursive;
+}
+header li, h2, .main_footer li{
+    font-size: 15px;
+    font-weight: 600;
+}
+header{
+    background-color: #A39F9F;
+}
+footer{
+    background-color: #FBFBFB ;
+    font-family: 'Patrick Hand', cursive;
+}
+
+li{
+    text-transform: uppercase;
+    transition-duration: 0.9s;
+}
+a{
+    font-family: 'Patrick Hand', cursive;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.9s;
+}
+.profile img, figure img{
+    width: 100%;
+}
+.portfolio{
+    background-color: white;
+    border-radius: 5px;
+}
+figcaption{
+    font-weight: 600;
+}
+footer p, .profile p{
+    color: #818080 ;
+}
+.main_footer li:last-child{
+    display: none;
+}
+header li:hover, footer li:hover{
+    background-color: bisque;
+    border: 3px dotted black;
+    border-radius: 5px;
+}
+li a:hover{
+    color: blue;
+}
+@media (min-width: 320px){
+    header, .profile{
+        margin-bottom: 40px;
+    }
+    .profile,.main_footer ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .profile p, .main_footer P, .each_portfolio p{
+        line-height: 1.7;
+    }
+    
+    
+    /*header*/
+    header h1, header ul, .profile p, h2, figcaption, .each_portfolio p, .main_footer, .skills li{
+        text-align: center;
+    }
+    h1{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .container{
+        width: 90%;
+    }
+    header li{
+        padding: 20px;
+        margin-bottom: 1px;
+    }
+    /*profile*/
+    .profile_img{
+        width: 85%;
+        margin: auto;
+        order: -1;
+    }
+    .profile p{
+        margin-bottom: 30px;
+    }
+    /*portfolio*/
+    h2{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }   
+    .each_portfolio{
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    .each_portfolio p{
+        padding: 3px 5px 20px 5px;
+        font-size: .8em;
+    }
+    figure{
+        margin: 0;
+    }
+    figcaption{
+        margin-top: 25px;
+        font-size: .97em;
+    }
+    /*skills*/
+    .skills{
+        background-color: #F2F9CD;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skills li{
+        text-transform: none;
+        margin: 20px;
+        list-style: disc;
+
+    }
+    /*footer*/
+    .main_footer > div>p:first-of-type{
+        margin-top: -10px;
+        margin-bottom: 3em;
+    }
+    .main_footer > div>p:last-of-type{
+        margin-bottom: 5.5em;
+    }
+    .main_footer ul{
+        border-top: 1px solid #A39F9F;
+        justify-content: space-around;
+        padding: 0 auto;
+    }
+    .main_footer li{
+        margin: 20px 0 20px 20px;
+    }
+    .main_footer li:first-child{
+        margin-right: auto;
+    }
+    .main_footer li{
+        display: none;
+    }
+    .main_footer li:last-child, .main_footer li:first-child{
+        display: block;
+    }
+    .main_footer li:first-child{
+        text-transform: none;
+        margin-left: 0;
+    }
+@media (min-width: 768px){
+    .profile p, .main_footer P{
+        font-size: 1.2em;
+    }
+    .container{
+        width: 95%;
+    }
+    header ul{
+        display: flex;
+        justify-content: center;
+    }
+    .profile_img{
+        width: 40%;
+        order: 0;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    .bio{
+        width: 58%;
+        text-align: left;
+    }
+    .profile p{
+        text-align: left;
+        margin-top: 0;
+    }
+    .each_portfolio{
+        width: 48%;
+    }
+    .portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .portfolio h2{
+        width: 100%;
+    }
+    .main_footer div{
+        width: 75%;
+    }
+    .each_portfolio p{
+        font-size: 1.1em;
+    }
+    footer h2{
+        font-size: 1.15em;
+    }
+    .main_footer footer li{
+        display: block;
+    }
+    .main_footer footer li:last-child{
+        display: none;
+    }
+    .main_footer footer li:first-child{
+        margin-left: 0;
+    }
+    
+}
+@media (min-width: 1024px){
+    .profile p, .main_footer P{
+        font-size: 1.26em;
+    }
+    .each_portfolio p{
+        font-size: .85em;
+    }
+    h1{
+        font-size: 20px;
+    }
+    header li, h2, .main_footer li{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .container{
+        width: 90%;
+    }
+    header .container{
+        display: flex;
+        justify-content: space-between;
+    } 
+    header li{
+        margin-bottom: 0;
+    }
+    .each_portfolio{
+        width: 32%;
+    }
+    .main_footer div{
+        width: 50%;
+    }
+}
+
+}

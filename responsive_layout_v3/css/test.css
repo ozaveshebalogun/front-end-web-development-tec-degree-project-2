@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+}
+body, header,header div, ul, .main, .profile, .portfolio, figure, .each_portfolio, .main_footer, .main_footer div, .main_footer footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    margin: 0;
+    background-color: #f5f5f5;
+}
+header li:first-child, .main_footer li:first-child{
+    margin-left: 0;
+}
+body, header, .main_footer, .each_portfolio, figure, .main_footer div{
+    justify-content: center;
+}
+header, .profile, .portfolio, .profile_img img, .portfolio h2, figure, figure img, .main_footer footer, .main_footer ul{
+    width: 100%;
+}
+header div, .main, .main_footer{
+    width: 60%;
+}
+header div, .profile, .main_footer ul, .main_footer footer{
+    justify-content: space-between;
+}
+header, .profile,.portfolio,.main_footer{
+    margin-bottom: 15px;
+}
+.profile p, .main_footer p{
+    font-size: .92em;
+    color: #636262;
+}
+.portfolio h2, figcaption, .each_portfolio p, .main_footer h2, .main_footer p{
+    text-align: center;
+}
+/*  header */
+header div{
+    background-color: aquamarine;
+}
+h1, header li{
+    margin: auto;
+}
+h1{ 
+    font-size: 1.5em;
+    margin: 15px 0 15px 0;  
+}
+h2{
+    font-size: 1em;
+}
+header li{
+    margin-left: 2rem;
+}
+/*end header */
+/* main */
+/*profile*/
+.main{
+    margin-top: 1em;
+}
+.bio{
+    width: 60%;
+    line-height: 1.5;
+}
+.bio p{
+    margin-top: 0;
+}
+.profile_img{
+    width: 35%;
+}
+/* end profile */
+/*     portfolio     */  
+.portfolio{
+    background-color: red;
+    justify-content: space-evenly;
+}
+.each_portfolio{
+    width: 30%;
+    background-color: aqua;
+    margin-bottom: 5px;
+}
+figure{
+    background-color: white;
+    margin: 0 auto; /**/
+}
+figure img{
+    height: 30vh;
+}
+figcaption, .each_portfolio p{
+    margin: 10px 3px 10px 3px;
+}
+figcaption{
+    font-size: .79em;
+    font-weight: 600;
+}
+.each_portfolio p{
+    font-size: 0.8em;
+}
+/* end portfolio */
+/* end main */
+/* footer */
+.main_footer, .main_footer div{
+    flex-direction: column;
+}
+.main_footer div{
+    width: 60%;
+    margin: 0 auto;
+}
+.main_footer p{
+    margin-bottom: 3px;
+}
+.main_footer > div>p:first-of-type{
+    margin-bottom: 30px;
+}
+.main_footer footer{
+    margin-top: 80px;
+}
+.main_footer ul{
+    height: 40px;
+    border-top: 2px solid #d4d4d4;
+}
+.main_footer li{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+.main_footer li:first-child, .main_footer li:last-child{
+    margin-right: auto;
+}
+.main_footer li:last-child{
+    display: none;
+}
+/* end footer */
+/********** media query ***********/
+h1, header li, header li:first-child,.profile p{
+    text-align: center;
+}
+header div, header ul, .profile{
+    flex-direction: column;
+    justify-content: center;
+}
+header ul, header li, header li:first-child,.bio, .each_portfolio, .main_footer div, .main_footer footer{
+    width: 100%;
+}
+header div, .main, .main_footer{
+    width: 90%;
+}
+
+/*header*/
+@media (min-width: 320px){
+header li, header li:first-child{
+    margin: auto;
+    background-color: white;
+    padding: .5em;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+}
+/*profile*/
+.profile p{
+    margin-top: 20px;
+}
+.profile_img{
+    width: 85%;
+    margin: auto;
+    order: -1;
+}
+/*portfolio */
+figure img{
+    height: 200px;
+}
+/*footer*/
+.main_footer li{
+    display: none;
+}
+.main_footer li:first-child, .main_footer li:last-child{
+    display: block;
+}
+.main_footer li:last-child{
+    margin-right: 0;
+}
+@media (min-width: 768px){
+    header div, .main, .main_footer{
+        width: 95%;
+    }
+    /* header */
+    header ul{
+        flex-direction: row;
+        background-color: blanchedalmond;
+        width: auto;
+        margin: 10px auto;
+    }
+    header li, header li:first-child{
+        width: auto;
+        margin: 5px;
+    }
+    /* profile */
+    .profile{
+        flex-direction: row;
+    }
+    .profile_img{
+        width: 40%;
+        order: 0;
+        margin-right: 0;
+    }
+    .bio{
+        background-color: aqua;
+        width: 56%;
+        padding-top: 0;
+    }
+    .bio p{
+        margin-top: 0;
+        text-align: left;
+    }
+    /*portfolio*/
+    .portfolio{
+        justify-content: space-between;
+    }
+    .each_portfolio{
+        width: 47%;
+    }
+    .main_footer div{
+        width: 80%;
+    }
+
+}
