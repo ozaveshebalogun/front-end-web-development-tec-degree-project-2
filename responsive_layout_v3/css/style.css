@@ -30,7 +30,6 @@ footer{
     background-color: #FBFBFB ;
     font-family: 'Patrick Hand', cursive;
 }
-
 li{
     text-transform: uppercase;
     transition-duration: 0.9s;
@@ -75,9 +74,7 @@ li a:hover{
     }
     .profile p, .main_footer P, .each_portfolio p{
         line-height: 1.7;
-    }
-    
-    
+    }  
     /*header*/
     header h1, header ul, .profile p, h2, figcaption, .each_portfolio p, .main_footer, .skills li{
         text-align: center;
@@ -146,7 +143,6 @@ li a:hover{
     .main_footer ul{
         border-top: 1px solid #A39F9F;
         justify-content: space-around;
-        padding: 0 auto;
     }
     .main_footer li{
         margin: 20px 0 20px 20px;
@@ -200,7 +196,7 @@ li a:hover{
     .portfolio h2{
         width: 100%;
     }
-    .main_footer div{
+    .main_footer div:first-child{
         width: 75%;
     }
     .each_portfolio p{
@@ -209,13 +205,13 @@ li a:hover{
     footer h2{
         font-size: 1.15em;
     }
-    .main_footer footer li{
+    .main_footer li{
         display: block;
     }
-    .main_footer footer li:last-child{
+    .main_footer li:last-child{
         display: none;
     }
-    .main_footer footer li:first-child{
+    .main_footer li:first-child{
         margin-left: 0;
     }
     
@@ -247,7 +243,7 @@ li a:hover{
     .each_portfolio{
         width: 32%;
     }
-    .main_footer div{
+    .main_footer div:first-child{
         width: 50%;
     }
 }
